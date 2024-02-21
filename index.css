@@ -1,0 +1,90 @@
+/* Базові стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.usersList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.usersList li {
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#userNameInput {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#getUserButton {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#getUserButton:hover {
+    background-color: #0056b3;
+}
+
+#userCity {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
+#userNumber,
+#userEmail {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user_info {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
